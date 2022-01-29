@@ -34,6 +34,7 @@ public class TallerfinalJava {
                     + "Ingrese 6 para crear una cuenta en Instagram\n"
                     + "Ingrese 7 para crear una cuenta en Flickr\n");
             numero = entrada.nextInt();
+            entrada.nextLine();
             if (numero == 1) {
                 System.out.println(crearFacebook());
             } else {
@@ -65,9 +66,11 @@ public class TallerfinalJava {
                 }
             }
 
-            System.out.println("Ingrese (si) para salir del proceso");
+            System.out.println("Ingrese (si) o cualquier otra palabra para salir "
+                    + " del proceso, caso contrario ingrese (no) para"
+                    + " continuar");
             salida = entrada.nextLine();
-        } while (salida.equals("si"));
+        } while (salida.equals("no"));
 
         obtenerMensaje(contador);
     }
@@ -83,10 +86,13 @@ public class TallerfinalJava {
         String correo;
         String mensaje;
 
+        System.out.println("----Se va a crear una cuenta en Facebook----");
+
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese la edad del usuario");
         edad = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese la ciudad del usuario");
         ciudad = entrada.nextLine();
         System.out.println("Ingrese el país del usuario");
@@ -96,7 +102,7 @@ public class TallerfinalJava {
 
         mensaje = String.format("El nombre del usuario es %s su edad es %d"
                 + " reside en la ciudad de %s en el país %s, y su correo"
-                + "electrónico es %s",
+                + " electrónico es %s",
                 nombreUsuario, edad, ciudad, pais, correo);
 
         return mensaje;
@@ -116,6 +122,8 @@ public class TallerfinalJava {
         String correo;
         String mensaje;
 
+        System.out.println("----Se va a crear una cuenta en Twitter----");
+
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese sus nombres");
@@ -124,6 +132,7 @@ public class TallerfinalJava {
         apellidos = entrada.nextLine();
         System.out.println("Ingrese la edad del usuario");
         edad = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese la ciudad del usuario");
         ciudad = entrada.nextLine();
         System.out.println("Ingrese el país del usuario");
@@ -135,8 +144,8 @@ public class TallerfinalJava {
 
         mensaje = String.format("El nickname del Usuario es %s, sus nombres son"
                 + " %s, con apellidos %s, su edad es %d, reside en la ciudad de"
-                + "%s en el país %s, el lenguaje seleccionado es %s y el correo"
-                + "electrónico del usuario es:",
+                + " %s en el país %s\n, el lenguaje seleccionado es %s y el correo"
+                + " electrónico del usuario es:",
                 nombreUsuario, nombre, apellidos, edad, ciudad, pais, idioma,
                 correo);
 
@@ -154,20 +163,23 @@ public class TallerfinalJava {
         String pais;
         String mensaje;
 
+        System.out.println("----Se va a crear una cuenta en Whatsapp----");
+
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese el numero de telefono");
         telefono = entrada.nextInt();
         System.out.println("Ingrese la edad del usuario");
         edad = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese la ciudad del usuario");
         ciudad = entrada.nextLine();
         System.out.println("Ingrese el país del usuario");
         pais = entrada.nextLine();
 
         mensaje = String.format("El nombre del usuario es %s, el número de "
-                + "telefono del usuario es %d, la edad del usuario es %d reside"
-                + "en la ciudad de %s en el país %s",
+                + " telefono del usuario es %d, la edad del usuario es %d reside"
+                + " en la ciudad de %s en el país %s",
                 nombreUsuario, telefono, edad, ciudad, pais);
 
         return mensaje;
@@ -184,10 +196,13 @@ public class TallerfinalJava {
         String area;
         String mensaje;
 
+        System.out.println("----Se va a crear una cuenta en Telegram----");
+
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese el numero de telefono");
         telefono = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese la ciudad del usuario");
         ciudad = entrada.nextLine();
         System.out.println("Ingrese el país del usuario");
@@ -196,7 +211,7 @@ public class TallerfinalJava {
         area = entrada.nextLine();
 
         mensaje = String.format("El nombre del usuario es %s, el número del"
-                + "usuario es %d, reside en la ciudad de %s en el país de %s"
+                + " usuario es %d, reside en la ciudad de %s en el país de %s"
                 + " y el área de interes del usuario es %s",
                 nombreUsuario, telefono, ciudad, pais, area);
 
@@ -215,10 +230,13 @@ public class TallerfinalJava {
         String hobby;
         String mensaje;
 
+        System.out.println("----Se va a crear una cuenta en Signal----");
+
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese el numero de telefono");
         telefono = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese la ciudad del usuario");
         ciudad = entrada.nextLine();
         System.out.println("Ingrese el país del usuario");
@@ -227,8 +245,8 @@ public class TallerfinalJava {
         hobby = entrada.nextLine();
 
         mensaje = String.format("El nombre del usuario es %s, su número de "
-                + "telefono es %d, reside en la ciudad de %s, en el país de %s"
-                + "y su hobby principal es %s",
+                + " telefono es %d, reside en la ciudad de %s, en el país de %s"
+                + " y su hobby principal es %s",
                 nombreUsuario, telefono, ciudad, pais, hobby);
 
         return mensaje;
@@ -244,17 +262,20 @@ public class TallerfinalJava {
         String correo;
         String mensaje;
 
+        System.out.println("----Se va a crear una cuenta en Instagram----");
+
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese la ciudad del usuario");
         ciudad = entrada.nextLine();
         System.out.println("Ingrese la edad del usuario");
         edad = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese el correo electrónico del usuario");
         correo = entrada.nextLine();
 
         mensaje = String.format("El nombre del usuario es %s reside en la ciudad"
-                + "de %s y tiene una edad de %d, su correo electronico es; %s",
+                + " de %s y tiene una edad de %d, su correo electronico es; %s",
                 nombreUsuario, ciudad, edad, correo);
 
         System.out.println(mensaje);
@@ -267,6 +288,8 @@ public class TallerfinalJava {
         String nombreUsuario;
         String correo;
         String mensaje;
+
+        System.out.println("----Se va a crear una cuenta en Flickr----");
 
         System.out.println("Ingrese el nombre del usuario");
         nombreUsuario = entrada.nextLine();
