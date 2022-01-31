@@ -128,7 +128,7 @@ public class TallerfinalJava {
         nombreUsuario = entrada.nextLine();
         System.out.println("Ingrese sus nombres");
         nombre = entrada.nextLine();
-        System.out.println("Ingrese sus apeliidos");
+        System.out.println("Ingrese sus apellidos");
         apellidos = entrada.nextLine();
         System.out.println("Ingrese la edad del usuario");
         edad = entrada.nextInt();
@@ -149,7 +149,7 @@ public class TallerfinalJava {
                 nombreUsuario, nombre, apellidos, edad, ciudad, pais, idioma,
                 correo);
 
-        System.out.println(mensaje);
+        System.out.printf(mensaje + " %s\n",correo);
     }
 
     public static String crearWhatsapp() { // devuelve valor
