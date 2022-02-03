@@ -82,13 +82,13 @@ def obtenerMensaje(contador):
      mensajeFinal = ["Campaña con poca afluencia",
             "Campaña moderada siga adelante", "Excelente campaña"]
      if contador >= 1 and contador <= 5:
-         print(mensajeFinal[0])
+         return(mensajeFinal[0])
      else:
          if contador >= 6 and contador <= 15:
-             print(mensajeFinal[1])
+             return(mensajeFinal[1])
          else:
              if contador >= 16:
-                 print(mensajeFinal[2])
+                 return(mensajeFinal[2])
 
 
 
@@ -128,6 +128,7 @@ while (condicion):
                             if numero == 7:
                                 print(crearFlickr())
                             else:
+                                contador = contador - 1
                                 print("El numero ingresado es incorrecto")
 
 
@@ -135,4 +136,4 @@ while (condicion):
     if salida == "si":
         condicion = False
 
-obtenerMensaje(contador)
+print(obtenerMensaje(contador))
