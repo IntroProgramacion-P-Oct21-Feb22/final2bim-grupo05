@@ -2,6 +2,7 @@
 ## Proyecto Python
 
 ***
+INTEGRANTES: DAVID CARRION - PABLO COSTA
 
 ### Problemática a resolver
 
